@@ -33,6 +33,8 @@ For python 3:
 
 9. `|` is bitwise OR, logical OR for putting multiple conditions together is `or`
 
+10. floor division `//` vs `round()`: floor division will stabilize the output to the smaller side of the integer, while `round()` can goes to larger side(eg. round(7/2) = 4) and smaller side (eg. round(5/2) = 2). To stabilize and predictable the calculation in binary search problems, use floor division.
+
 ## 3. Binary Tree
 1. By convention, use the `root` Node to represent the whole tree, and use Node.value to retrieve the value of each Node.
 
@@ -45,6 +47,8 @@ For python 3:
 4. leetcode 100 Same Tree(DFS) and leetcode 101 Symmetric Tree(BFS) are the same kind of problem: they both want to assert sub-trees are the same or not.
 
 ## 4. Binary Search
+
+1. Use two pointers to save which sub-section you are searching in. 
 
 
 
