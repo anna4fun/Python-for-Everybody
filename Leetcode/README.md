@@ -31,11 +31,10 @@ For python 3:
 
 8. chr() and ord() : ord('a') = 97, chr(97) = 'a'. This pair of functions gives the Unicode code point of the character. see leetcode 709 & 804, upper and lower case letters.
 
+9. `|` is bitwise OR, logical OR for putting multiple conditions together is `or`
+
 ## 3. Binary Tree
 1. By convention, use the `root` Node to represent the whole tree, and use Node.value to retrieve the value of each Node.
-
-
-
 
 2. Whenever you want to travel a tree with DFS(first reach leaf, then goes right), use a **Stack** to save the nodes of the tree, upper and left nodes come in first, lower and right nodes come in last, this is the best way to save a tree into an array. <114 Flatten Binary Tree To Linked List>
 
@@ -45,7 +44,7 @@ For python 3:
 
 4. leetcode 100 Same Tree(DFS) and leetcode 101 Symmetric Tree(BFS) are the same kind of problem: they both want to assert sub-trees are the same or not.
 
-
+## 4. Binary Search
 
 
 
