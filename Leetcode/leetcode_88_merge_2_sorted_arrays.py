@@ -41,3 +41,5 @@ class Solution:
             p3 -= 1
 
         return nums1
+
+# time complexity O(m+n), extra space is O(1)
