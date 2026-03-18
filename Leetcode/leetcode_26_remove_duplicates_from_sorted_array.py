@@ -47,7 +47,7 @@ class Solution:
                     l += 1
                     r += 1
         return l+1
-
+    # 2026/03/18 this is the best solution offered by GPT
     def removeDuplicates4(self, nums: List[int]) -> int:
         if not nums:
             return 0   
