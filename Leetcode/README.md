@@ -1,7 +1,7 @@
 For python 3:
 
 ## 1. Generate Number
-1. range(): range(n) will give range(0,n), if you want to create a iterable list, use list(range(n))
+1. range(): range(n) will give range(0,n), if you want to create a iterable list, use list(range(n)). For reverse list, range(m+n, m, -1).
 
 
 ## 2. Built-in functions for list and string
@@ -34,6 +34,10 @@ For python 3:
 9. `|` is bitwise OR, logical OR for putting multiple conditions together is `or`
 
 10. floor division `//` vs `round()`: floor division will stabilize the output to the smaller side of the integer, while `round()` can goes to larger side(eg. round(7/2) = 4) and smaller side (eg. round(5/2) = 2). To stabilize and predictable the calculation in binary search problems, use floor division.
+
+11. Remainder `%`, 7%2 = 1.
+
+12
 
 ## 3. Binary Tree
 1. By convention, use the `root` Node to represent the whole tree, and use Node.value to retrieve the value of each Node.
