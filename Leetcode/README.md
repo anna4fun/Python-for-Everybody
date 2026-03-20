@@ -54,6 +54,10 @@ For python 3:
 
 1. Use two pointers to save which sub-section you are searching in. 
 
+## 5. Dynamic Programming
+
+1. global max and min tracker
+
 
 
 
