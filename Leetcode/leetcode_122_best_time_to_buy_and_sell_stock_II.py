@@ -29,6 +29,32 @@ class Solution:
                             max_profit += prices[i] - buy_price
                             temp_min_price, buy_price, sell_price = None, None, None
 
+    # correted version
+    def maxProfit1_corrected(self, prices: List[int]) -> int:
+        if not prices:
+            return 0
+
+        max_profit = 0
+        buy_price = None
+        temp_max_price = None
+
+        for price in prices:
+            if buy_price is None:
+                buy_price = price
+                temp_max_price = price
+            else:
+                if price >= temp_max_price:
+                    temp_max_price = price
+                else:
+                    max_profit += temp_max_price - buy_price
+                    buy_price = price
+                    temp_max_price = price
+
+        if buy_price is not None:
+            max_profit += temp_max_price - buy_price
+
+        return max_profit
+
     
     # 2026/03/20 GPT Greedy solution
     def maxProfit2(self, prices: List[int]) -> int:
