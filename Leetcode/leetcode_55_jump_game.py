@@ -52,5 +52,7 @@ class Solution:
                 # i比目前能达到的最远下标近，更新farthest
                 farthest = max(i+nums[i], farthest)
             else:
+                # i > farthest
+                # 说明这个新位置i是不可能到达的地方
                 return False
         return True
