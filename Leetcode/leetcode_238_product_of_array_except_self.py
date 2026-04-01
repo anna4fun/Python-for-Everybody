@@ -42,3 +42,21 @@ class Solution:
             right_product *= nums[i]
         
         return answers
+
+    # 2026/03/31 updates
+    def productExceptSelf3(self, nums: List[int]) -> List[int]:
+        left_product = 1
+        right_product = 1
+        n = len(nums)
+        answer = [1] * n
+
+        # from left to right, record the accumulative product in `answer`
+        for i in range(n):
+            left_product *= nums[i] # wrong：这样会导致 i th position contains product of itself. 应该跟下一行换一下位置
+            answer[i] = left_product
+            
+        for i in range(n-1, -1, -1):
+            right_product *= nums[i] # wrong：同样问题：这样会导致 i th position contains product of itself. 
+            answer[i] *= right_product
+            
+        return answer
